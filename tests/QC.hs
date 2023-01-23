@@ -1,6 +1,6 @@
 module Main where
 
-import Control.Monad (forM_)
+-- import Control.Monad (forM_)
 import qualified Data.BloomFilter.Easy as B
 import Data.BloomFilter.Hash (Hashable(..), hash64)
 import qualified Data.ByteString.Char8 as SB
@@ -8,9 +8,9 @@ import qualified Data.ByteString.Lazy.Char8 as LB
 import Data.Int (Int8, Int16, Int32, Int64)
 import Data.Word (Word8, Word16, Word32, Word64)
 import Test.Framework.Providers.QuickCheck2 (testProperty)
-import System.IO (BufferMode(..), hSetBuffering, stdout)
+-- import System.IO (BufferMode(..), hSetBuffering, stdout)
 import Test.Framework (Test, defaultMain)
-import Test.QuickCheck (Property, Testable, (==>), choose, forAll)
+import Test.QuickCheck (Property, (==>), choose, forAll) --Testable
 
 import QCSupport (P(..))
 
